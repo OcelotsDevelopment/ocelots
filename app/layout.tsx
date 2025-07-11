@@ -1,15 +1,13 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const geistPoppins = Poppins({
+  variable: "--font-geist-poppins",
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
@@ -24,10 +22,67 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={geistPoppins.variable + " antialiased"}>
+        <header className="border-[#CDCBCB] border-b ">
+          <div className="flex justify-between px-12 py-4">
+            <div>
+              <div >
+                <img
+                  src="/logo.png"
+                  alt="Crowd Image"
+                  className="h-16"
+                />
+              </div>
+            </div>
+            <nav className="flex items-center gap-8">
+              <Link href={"/services"} >Services</Link>
+              <Link href={"/about"} >About</Link>
+              <Link href={"/works"} >Works</Link>
+              <Link href={"/contact"} >Contact</Link>
+
+              <button className="bg-primary rounded-4xl px-5 py-2.5 text-white">Get Started</button>
+            </nav>
+          </div>
+        </header>
         {children}
+
+        <footer className="bg-[#F8F8F0] text-gray-800 py-12">
+          <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+            {/* Logo & Description */}
+            <div>
+              <h2 className="text-4xl font-bold text-orange-500 mb-4">Ocelots</h2>
+              <p className="mb-2">lorem ipsum dolor sit amet, consectetur adipiscing lit.</p>
+              <p>lorem ipsum dolor sit amet.</p>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
+              <ul className="space-y-2">
+                <li><Link href="#" className="hover:underline">Works</Link></li>
+                <li><Link href="#" className="hover:underline">About Us</Link></li>
+                <li><Link href="#" className="hover:underline">Services</Link></li>
+                <li><Link href="#" className="hover:underline">Contact</Link></li>
+              </ul>
+            </div>
+
+            {/* Social Media */}
+            <div>
+              <h3 className="text-xl font-semibold mb-4">Follow Us On</h3>
+              <div className="flex space-x-4">
+                <a href="#" className="text-2xl"><Instagram /></a>
+                <a href="#" className="text-2xl"><Linkedin /></a>
+                <a href="#" className="text-2xl"><Facebook /> </a>
+              </div>
+            </div>
+          </div>
+
+          <hr className="my-8 border-gray-300" />
+
+          <div className="text-center text-sm text-gray-600">
+            &copy; 2025 Ocelot
+          </div>
+        </footer>
       </body>
     </html>
   );
