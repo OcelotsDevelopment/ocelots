@@ -26,21 +26,25 @@ export default function RootLayout({
         <header className="border-[#CDCBCB] border-b ">
           <div className="flex justify-between px-12 py-4">
             <div>
-              <div >
-                <img
-                  src="/logo.png"
-                  alt="Crowd Image"
-                  className="h-16"
-                />
+              <div>
+                <Link href={"/"}>
+                  <img
+                    src="/logo.png"
+                    alt="Crowd Image"
+                    className="h-16 transition delay-150 duration-300 hover:scale-105"
+                  />
+                </Link>
               </div>
             </div>
             <nav className="flex items-center gap-8">
-              <Link href={"/services"} >Services</Link>
-              <Link href={"/about"} >About</Link>
-              <Link href={"/works"} >Works</Link>
-              <Link href={"/contact"} >Contact</Link>
+              <Link href={"/services"}>Services</Link>
+              <Link href={"/about"}>About</Link>
+              <Link href={"/works"}>Works</Link>
+              <Link href={"/contact"}>Contact</Link>
 
-              <button className="bg-primary rounded-4xl px-5 py-2.5 text-white">Get Started</button>
+              <button className="bg-primary rounded-4xl px-5 py-2.5 text-white">
+                Get Started
+              </button>
             </nav>
           </div>
         </header>
@@ -50,8 +54,12 @@ export default function RootLayout({
           <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
             {/* Logo & Description */}
             <div>
-              <h2 className="text-4xl font-bold text-orange-500 mb-4">Ocelots</h2>
-              <p className="mb-2">lorem ipsum dolor sit amet, consectetur adipiscing lit.</p>
+              <h2 className="text-4xl font-bold text-orange-500 mb-4">
+                Ocelots
+              </h2>
+              <p className="mb-2">
+                lorem ipsum dolor sit amet, consectetur adipiscing lit.
+              </p>
               <p>lorem ipsum dolor sit amet.</p>
             </div>
 
@@ -59,10 +67,26 @@ export default function RootLayout({
             <div>
               <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
               <ul className="space-y-2">
-                <li><Link href="#" className="hover:underline">Works</Link></li>
-                <li><Link href="#" className="hover:underline">About Us</Link></li>
-                <li><Link href="#" className="hover:underline">Services</Link></li>
-                <li><Link href="#" className="hover:underline">Contact</Link></li>
+                <li>
+                  <Link href="#" className="hover:underline">
+                    Works
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:underline">
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:underline">
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#" className="hover:underline">
+                    Contact
+                  </Link>
+                </li>
               </ul>
             </div>
 
@@ -70,9 +94,48 @@ export default function RootLayout({
             <div>
               <h3 className="text-xl font-semibold mb-4">Follow Us On</h3>
               <div className="flex space-x-4">
-                <a href="#" className="text-2xl"><Instagram /></a>
-                <a href="#" className="text-2xl"><Linkedin /></a>
-                <a href="#" className="text-2xl"><Facebook /> </a>
+                <a href="#" className="text-2xl">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="28"
+                    fill="none"
+                    viewBox="0 0 28 28"
+                  >
+                    <path
+                      fill="#000"
+                      d="M8.4.667h11.2A7.74 7.74 0 0 1 27.334 8.4v11.2a7.733 7.733 0 0 1-7.734 7.733H8.4A7.74 7.74 0 0 1 .667 19.6V8.4A7.733 7.733 0 0 1 8.4.667m-.266 2.666a4.8 4.8 0 0 0-4.8 4.8v11.734c0 2.653 2.146 4.8 4.8 4.8h11.733a4.8 4.8 0 0 0 4.8-4.8V8.132c0-2.653-2.147-4.8-4.8-4.8zm12.866 2a1.666 1.666 0 1 1 0 3.333 1.666 1.666 0 0 1 0-3.333m-7 2a6.667 6.667 0 1 1 0 13.334 6.667 6.667 0 0 1 0-13.334M14 10a4 4 0 1 0 0 8 4 4 0 0 0 0-8"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="#" className="text-2xl">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="28"
+                    height="29"
+                    fill="none"
+                    viewBox="0 0 28 29"
+                  >
+                    <path
+                      fill="#000"
+                      d="M24.889.333A3.11 3.11 0 0 1 28 3.445v21.777a3.11 3.11 0 0 1-3.111 3.111H3.11A3.11 3.11 0 0 1 0 25.224V3.444A3.11 3.11 0 0 1 3.111.333zm-.778 24.112V16.2a5.07 5.07 0 0 0-5.071-5.07c-1.322 0-2.862.808-3.609 2.021v-1.726h-4.34v13.02h4.34v-7.67a2.17 2.17 0 0 1 2.162-2.177 2.18 2.18 0 0 1 2.178 2.178v7.669zM6.036 8.982A2.613 2.613 0 0 0 8.649 6.37 2.62 2.62 0 0 0 6.036 3.74a2.63 2.63 0 0 0-2.63 2.629 2.62 2.62 0 0 0 2.63 2.613m2.162 15.463v-13.02h-4.31v13.02z"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="#" className="text-2xl">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="30"
+                    fill="none"
+                    viewBox="0 0 30 30"
+                  >
+                    <path
+                      fill="#000"
+                      d="M29.34 14.67C29.34 6.572 22.768 0 14.67 0S0 6.572 0 14.67c0 7.1 5.046 13.012 11.736 14.377V19.07H8.802V14.67h2.934v-3.668a5.14 5.14 0 0 1 5.134-5.134h3.668v4.401h-2.934c-.807 0-1.467.66-1.467 1.467v2.934h4.401v4.401h-4.401v10.196c7.408-.734 13.203-6.983 13.203-14.597"
+                    ></path>
+                  </svg>
+                </a>
               </div>
             </div>
           </div>

@@ -1,32 +1,56 @@
-// import Image from "next/image";
-import Link from "next/link";
-
+import ContactSec from "@/components/styleComp/contactSec";
+import OurStory from "@/components/styleComp/ourStory";
+import PartnerComp from "@/components/styleComp/partnerComp";
+import SwiperCard from "@/components/styleComp/swiperCard";
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css/effect-coverflow';
 export default function Home() {
   return (
     <>
-
       <section className="px-12">
         <div className="flex items-center justify-between">
           <div>
             <p className="text-6xl">YOUR NEW DIGITAL</p>
             <div className="flex items-center gap-4">
-              <button className="bg-primary rounded-4xl px-5 py-2.5 text-white ">Get Started</button>
-              <p className="text-6xl">SOLUTION <span className="text-primary">PARTNER</span></p>
+              <button className="bg-primary rounded-4xl px-5 py-2.5 text-white ">
+                Get Started
+              </button>
+              <p className="text-6xl">
+                SOLUTION <span className="text-primary">PARTNER</span>
+              </p>
             </div>
           </div>
 
           <div className="flex items-start gap-10 mt-8">
             <div className="h-32 w-[1px] bg-black"></div>
             <div>
-              <p className="text-black/35">Where creativity meets strategy, we help<br />brands shine through video, social media,<br />and design solutions."</p>
+              <p className="text-black/35">
+                Where creativity meets strategy, we help
+                <br />
+                brands shine through video, social media,
+                <br />
+                and design solutions."
+              </p>
               <div className="flex items-center gap-4 text-center">
                 <div>
                   <p className="text-4xl">12 +</p>
-                  <p className="">Years of<br />experence</p>
+                  <p className="">
+                    Years of
+                    <br />
+                    experence
+                  </p>
                 </div>
                 <div>
                   <p className="text-4xl">30 +</p>
-                  <p>Trusted<br />partners</p>
+                  <p>
+                    Trusted
+                    <br />
+                    partners
+                  </p>
                 </div>
               </div>
             </div>
@@ -44,77 +68,166 @@ export default function Home() {
 
       <section className="py-20 px-12">
         <h2 className="text-center text-5xl md:text-5xl mb-14">
-          We work the best <span className="text-primary text-7xl">Partners.</span>
+          We work the best{" "}
+          <span className="text-primary text-7xl">Partners.</span>
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-8 gap-y-12">
-          {/* Row 1 */}
-          <div className="flex justify-center">
-            <img src="/partners/acer.png" alt="EBG" className="bg-white rounded shadow-md p-4 h-16 object-contain" />
-          </div>
-          <div className="flex justify-center">
-            <img src="/partners/ebg.png" alt="Acer" className="bg-white rounded shadow-md p-4 h-16 object-contain" />
-          </div>
-          <div className="flex justify-center">
-            <img src="/partners/brillen.png" alt="Brillen" className="bg-white rounded shadow-md p-4 h-16 object-contain" />
-          </div>
-          <div className="flex justify-center">
-            <img src="/partners/daewoo.png" alt="Daewoo" className="bg-white rounded shadow-md p-4 h-16 object-contain" />
-          </div>
-          <div className="flex justify-center">
-            <img src="/partners/aaa.png" alt="Adhira Yappa Coffee" className="bg-white rounded shadow-md p-4 h-16 object-contain" />
-          </div>
-          {/* Row 2 */}
-          <div className="flex justify-center">
-            <img src="/partners/magicstone.png" alt="Magic Stone" className="bg-white rounded shadow-md p-4 h-16 object-contain" />
-          </div>
-          <div className="flex justify-center">
-            <img src="/partners/nonstop.png" alt="Nonstop" className="bg-white rounded shadow-md p-4 h-16 object-contain" />
-          </div>
-          <div className="flex justify-center">
-            <img src="/partners/ebgreality.png" alt="EBG Realty" className="bg-white rounded shadow-md p-4 h-16 object-contain" />
-          </div>
-          <div className="flex justify-center">
-            <img src="/partners/ebikego.png" alt="eBikeGo" className="bg-white rounded shadow-md p-4 h-16 object-contain" />
-          </div>
-          <div className="flex justify-center">
-            <img src="/partners/ntr.png" alt="NTP" className="bg-white rounded shadow-md p-4 h-16 object-contain" />
-          </div>
-          {/* Row 3 */}
-          <div className="flex justify-center">
-            <img src="/partners/vajram.png" alt="Vajram Electric" className="bg-white rounded shadow-md p-4 h-16 object-contain" />
-          </div>
-          <div className="flex justify-center">
-            <img src="/partners/flamingo.png" alt="Flamingo Villas" className="bg-white rounded shadow-md p-4 h-16 object-contain" />
-          </div>
-          <div className="flex justify-center">
-            <img src="/partners/nuvnu.png" alt="Nuvun" className="bg-white rounded shadow-md p-4 h-16 object-contain" />
-          </div>
-          <div className="flex justify-center">
-            <img src="/partners/prevekta.png" alt="Prevekta Ayurveda" className="bg-white rounded shadow-md p-4 h-16 object-contain" />
-          </div>
-          <div className="flex justify-center">
-            <img src="/partners/carlton.png" alt="Carlton" className="bg-white rounded shadow-md p-4 h-16 object-contain" />
-          </div>
-          {/* Row 4 */}
-          <div className="flex justify-center">
-            <img src="/partners/fractro.png" alt="Fractro" className="bg-white rounded shadow-md p-4 h-16 object-contain" />
-          </div>
-          <div className="flex justify-center">
-            <img src="/partners/sainath.png" alt="Chaturvatika" className="bg-white rounded shadow-md p-4 h-16 object-contain" />
-          </div>
-          <div className="flex justify-center">
-            <img src="/partners/sweetmagic.png" alt="Sweet Magic" className="bg-white rounded shadow-md p-4 h-16 object-contain" />
-          </div>
-          <div className="flex justify-center">
-            <img src="/partners/renew.png" alt="Renew Aesthetics" className="bg-white rounded shadow-md p-4 h-16 object-contain" />
-          </div>
-          <div></div>
-        </div>
+        <PartnerComp />
       </section>
 
-      <section>
-        
+      <OurStory />
+
+      <section className="bg-[#f9f7f2] p-10 border border-[#e3dccc]">
+        <div className=" border border-[#FFBA6D] p-12 px-36 ">
+          {/* Heading */}
+          <h2 className="text-3xl md:text-4xl text-center mb-12">
+            What We Are{" "}
+            <span className="text-orange-500 text-5xl">OFFERING</span>
+          </h2>
+          {/* Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-center gap-6 text-black/65">
+            {/* Item */}
+            <div className=" min-h-[250px]">
+              <div className="flip-card h-full ">
+                <div className="flip-card-inner h-full">
+                  <div className="flip-card-front border border-orange-200 bg-[#f9f7f2] p-6 text-left h-full flex items-center justify-center ">
+                    <h4 className="text-center text-3xl mb-2">
+                      Social Media Marketing
+                    </h4>
+                  </div>
+                  <div className="flip-card-back border border-orange-200 bg-[#f9f7f2] p-4 text-left h-full overflow-y-hidden">
+                    <p className="text-lg font-bold mb-4">
+                      Social Media Marketing
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Suscipit animi, tenetur impedit aspernatur consectetur
+                      nisi repellendus corporis error quidem nulla.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="border border-orange-200 overflow-hidden">
+              <img
+                src="/assets/weo1.jpg"
+                alt="Media"
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-300"
+              />
+            </div>
+            <div className=" min-h-[250px]">
+              <div className="flip-card h-full ">
+                <div className="flip-card-inner h-full">
+                  <div className="flip-card-front border border-orange-200 bg-[#f9f7f2] p-6 text-left h-full flex items-center justify-center ">
+                    <h4 className="text-center text-3xl mb-2">SEO</h4>
+                  </div>
+                  <div className="flip-card-back border border-orange-200 bg-[#f9f7f2] p-4 text-left h-full overflow-y-hidden">
+                    <p className="text-lg font-bold mb-4">
+                      Search Engine Optimization(SEO)
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Suscipit animi, tenetur impedit aspernatur consectetur
+                      nisi repellendus corporis error quidem nulla.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="border border-orange-200 overflow-hidden">
+              <img
+                src="/assets/weo2.png"
+                alt="Production"
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-300"
+              />
+            </div>
+            <div className=" min-h-[250px]">
+              <div className="flip-card h-full ">
+                <div className="flip-card-inner h-full">
+                  <div className="flip-card-front border border-orange-200 bg-[#f9f7f2] p-6 text-left h-full flex items-center justify-center ">
+                    <h4 className="text-center text-3xl mb-2">Web Design</h4>
+                  </div>
+                  <div className="flip-card-back border border-orange-200 bg-[#f9f7f2] p-4 text-left h-full overflow-y-hidden">
+                    <p className="text-lg font-bold mb-4">Web Design</p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Suscipit animi, tenetur impedit aspernatur consectetur
+                      nisi repellendus corporis error quidem nulla.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className=" min-h-[250px]">
+              <div className="flip-card h-full ">
+                <div className="flip-card-inner h-full">
+                  <div className="flip-card-front border border-orange-200 bg-[#f9f7f2] p-6 text-left h-full flex items-center justify-center ">
+                    <h4 className="text-center text-3xl mb-2">Ad Film</h4>
+                  </div>
+                  <div className="flip-card-back border border-orange-200 bg-[#f9f7f2] p-4 text-left h-full overflow-y-hidden">
+                    <p className="text-lg font-bold mb-4">Ad Film</p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Suscipit animi, tenetur impedit aspernatur consectetur
+                      nisi repellendus corporis error quidem nulla.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className=" min-h-[250px]">
+              <div className="flip-card h-full ">
+                <div className="flip-card-inner h-full">
+                  <div className="flip-card-front border border-orange-200 bg-[#f9f7f2] p-6 text-left h-full flex items-center justify-center ">
+                    <h4 className="text-center text-3xl mb-2">
+                      Mobile App Development
+                    </h4>
+                  </div>
+                  <div className="flip-card-back border border-orange-200 bg-[#f9f7f2] p-4 text-left h-full overflow-y-hidden">
+                    <p className="text-lg font-bold mb-4">
+                      Mobile App Development
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Suscipit animi, tenetur impedit aspernatur consectetur
+                      nisi repellendus corporis error quidem nulla.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className=" min-h-[250px]">
+              <div className="flip-card h-full ">
+                <div className="flip-card-inner h-full">
+                  <div className="flip-card-front border border-orange-200 bg-[#f9f7f2] p-6 text-left h-full flex items-center justify-center ">
+                    <h4 className="text-center text-3xl mb-2">
+                      Brand Story Telling
+                    </h4>
+                  </div>
+                  <div className="flip-card-back border border-orange-200 bg-[#f9f7f2] p-4 text-left h-full overflow-y-hidden">
+                    <p className="text-lg font-bold mb-4">
+                      Brand Story Telling
+                    </p>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Suscipit animi, tenetur impedit aspernatur consectetur
+                      nisi repellendus corporis error quidem nulla.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="border border-orange-200 overflow-hidden">
+              <img
+                src="/assets/weo3.png"
+                alt="Laptop"
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-300"
+              />
+            </div>
+          </div>
+        </div>
       </section>
+      <SwiperCard />
+      <ContactSec />
     </>
   );
 }
