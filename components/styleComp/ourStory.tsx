@@ -4,8 +4,11 @@ function OurStory() {
   return (
     <section className="bg-white text-black py-16 px-6 md:px-20">
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
-        Who We Are <span className="text-orange-500">OUR STORY</span>
+      <h2 className="text-2xl md:text-4xl font-normal mb-6 text-center">
+        Who We Are{" "}
+        <span className="text-orange-500 font-semibold text-5xl align-middle">
+          OUR STORY
+        </span>
       </h2>
       {/* Main Grid */}
       <div className="grid md:grid-cols-2 gap-12 items-center">

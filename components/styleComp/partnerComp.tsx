@@ -60,7 +60,7 @@ const companyList: Company[] = [
     },
     {
         img: "/partners/prevekta.png",
-        cls: "h-auto"
+        cls: "h-24 w-32 h-auto"
     },
     {
         img: "/partners/carlton.png",
@@ -88,19 +88,18 @@ export default function PartnerComp() {
 
     return (
         <div className="flex justify-center">
-            <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-5 w-fit">
+            <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 w-fit">
                 {companyList.map((e: Company, i) => (
                     <div key={i} className="flex items-center justify-center p-6 " style={{
                         borderRight: (i + 1) % 5 === 0 ? "none" : "1px solid #CDCBCB",
                         borderBottom: i >= (companyList.length) - 4 ? "none" : "1px solid #CDCBCB"
                     }} >
-                        <div className="bg-white rounded shadow-md p-4 h-20 w-40 flex justify-center items-center overflow-hidden">
+                        <div className="bg-white rounded shadow-md p-4 h-20 w-40 flex justify-center items-center ">
                             <img src={e.img} alt="EBG" className={"object-contain "+e.cls} />
                         </div>
                     </div>
                 ))}
             </div>
-            <div className='w-'></div>
         </div>
     )
 }
