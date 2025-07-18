@@ -137,3 +137,32 @@ function SwiperCard() {
 }
 
 export default SwiperCard;
+
+
+{/* <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-14">
+                <div>
+                  <h2 className="text-lg md:text-3xl font-bold text-orange-500 uppercase tracking-wide">
+                    {service.title}
+                  </h2>
+                  <p className="text-gray-700 text-base md:text-lg mt-1 mb-2 md:mb-0">
+                    {service.subtitle}
+                  </p>
+                </div>
+                <div className="text-gray-400 text-sm md:text-base md:text-right max-w-xs md:max-w-sm ml-auto">
+                  {service.desc}
+                </div>
+              </div>
+
+              <div className={`flex  justify-between gap-10 ${idx % 2 !== 0 ? "flex-row-reverse" : "flex-row"}`}>
+                <div className="w-1/2 shadow rounded-xl p-4">
+                  <h2 className="font-bold text-2xl mb-5">
+                    {service.secTitle}
+                  </h2>
+                  <p className="text-gray-600 text-lg ">
+                    {service.sentence}
+                  </p>
+                </div>
+                <div className="w-1/2 ">
+                  <img src={"/assets/" + service.img} alt="" className="h-96" />
+                </div>
+              </div> */}

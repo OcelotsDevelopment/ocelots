@@ -9,7 +9,7 @@ function page() {
   return (
     <main>
       <section className="p-14">
-        <h1 className="text-4xl mb-6 text-black/65">
+        <h1 className="text-4xl mb-14 text-black/65">
           With OCELOTS, more than <span className="text-primary">30</span>{" "}
           clients stood <br />
           out and made their brands go big bang.
@@ -18,39 +18,39 @@ function page() {
         <SlideOne />
       </section>
 
-      <section className="p-14">
+      {/* <section className="p-14">
         <p className="text-primary text-5xl uppercase"> SHOW REEL</p>
-      </section>
+      </section> */}
 
       <section className="p-14">
         <div className="">
-          <p className="text-primary text-5xl uppercase"> Websites</p>
-          <div className="flex items-start gap-7 text-black/65">
+          <p className="text-primary text-5xl uppercase mb-6"> Websites</p>
+          <div className="flex flex-col md:flex-row items-start gap-7 text-black/65">
             <div className="w-1/2">
               <img
                 src="/assets/web1.png"
                 alt=""
                 className="h-[448px] w-full "
               />
-              <p>
+              {/* <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptates officia possimus, quasi eligendi fugiat doloribus
                 tempora ipsam ab suscipit ea dignissimos numquam fugit libero
                 quibusdam.
-              </p>
+              </p> */}
             </div>
             <div className="w-1/2">
               <img
                 src="/assets/web2.png"
-                alt=""
+                alt="" 
                 className="h-[448px] w-full "
               />
-              <p className="text-black/65">
+              {/* <p className="text-black/65">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Voluptates officia possimus, quasi eligendi fugiat doloribus
                 tempora ipsam ab suscipit ea dignissimos numquam fugit libero
                 quibusdam.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
