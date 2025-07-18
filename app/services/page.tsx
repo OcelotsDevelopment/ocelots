@@ -94,8 +94,6 @@ export default () => {
             </div>
           ))}
         </div>
-
-
       </section>
     </main>
   );

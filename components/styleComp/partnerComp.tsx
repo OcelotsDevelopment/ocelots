@@ -90,10 +90,12 @@ export default function PartnerComp() {
         <div className="flex justify-center">
             <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-5 w-fit">
                 {companyList.map((e: Company, i) => (
-                    <div key={i} className="flex items-center justify-center p-6 " style={{
-                        borderRight: (i + 1) % 5 === 0 ? "none" : "1px solid #CDCBCB",
-                        borderBottom: i >= (companyList.length) - 4 ? "none" : "1px solid #CDCBCB"
-                    }} >
+                    <div key={i} className="flex items-center justify-center p-6 " 
+                    // style={{
+                    //     borderRight: (i + 1) % 5 === 0 ? "none" : "1px solid #CDCBCB",
+                    //     borderBottom: i >= (companyList.length) - 4 ? "none" : "1px solid #CDCBCB"
+                    // }}
+                     >
                         <div className="bg-white rounded shadow-md p-4 h-20 w-40 flex justify-center items-center overflow-hidden">
                             <img src={e.img} alt="EBG" className={"object-contain "+e.cls} />
                         </div>
