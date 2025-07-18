@@ -51,7 +51,7 @@ const companyList: Company[] = [
         cls: "h-auto"
     },
     {
-        img: "/partners/flamingo.png",
+        img: "/partners/flamingo1.png",
         cls: "h-auto"
     },
     {
