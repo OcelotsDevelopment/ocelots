@@ -5,25 +5,23 @@ function OurStory() {
     <section className="bg-white text-black py-16 px-6 md:px-20">
       {/* Heading */}
       <h2 className="text-2xl md:text-4xl font-normal mb-6 text-center">
-        Who We Are{" "}
+        Our{" "}
         <span className="text-orange-500 font-semibold text-5xl align-middle">
-          OUR STORY
+          STORY
         </span>
       </h2>
       {/* Main Grid */}
       <div className="grid md:grid-cols-2 gap-12 items-center">
         {/* Text Column */}
-        <div>
-          <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            Two friends, one shared dream. In 2017, their creative journey
-            began, fueled by a passion for storytelling. 413 Studios took root
-            in a hostel room, sprouting innovative short films, music videos,
-            and a legacy that continues to unfold.
+        <div className="flex flex-col gap-4">
+          <p className="text-lg text-gray-700 leading-relaxed ">
+            Ocelots began in 2024 with a clear purpose, to help brands grow through creative and result-driven digital marketing.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
-            Today, we're proud to have evolved into a leading creative agency,
-            handling esteemed accounts for EBG Group, Acer Electric, and many
-            more.
+            In just a short time, we’ve worked with businesses of all sizes, helping them build stronger online presence, connect with audiences, and grow faster.
+          </p>
+          <p className="text-lg text-gray-700 leading-relaxed">
+            But for us, this is just the beginning. Every brand has a story, and at Ocelots, we’re here to make sure yours gets the attention it deserves.
           </p>
         </div>
         {/* Founders Section */}

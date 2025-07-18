@@ -1,3 +1,4 @@
+import SlideOne from "@/components/styleComp/workSlide/SlideOne";
 import React from "react";
 
 export default () => {
@@ -5,10 +6,11 @@ export default () => {
     <main>
       <section className="max-w-7xl mx-auto py-12 px-4">
         <h1 className="text-primary text-5xl uppercase mb-5">services</h1>
-        <p className="text-3xl text-black/65">
-          We don't just think out of the box but <br />
-          redesign it and make it look cooler.
+        <p className="text-3xl text-black/65 mb-10 ">
+          A Complete Set of Services to<br />
+          Build and Boost Your Brand.
         </p>
+        <SlideOne />
       </section>
       <section>
         <div className="max-w-7xl mx-auto py-12 px-4">
@@ -16,28 +18,33 @@ export default () => {
           {[
             {
               title: "DIGITAL MAKKETING",
-              subtitle: "Marketing that hits harder than your FYP",
-              desc: "Lorem ipsum dolor sit amet consectetur. Bo enim ac nunc dolor pellentesque.",
+              subtitle: "Make Your Brand Social",
+              desc: "We create posts people love, helping your brand grow and connect with the right audience online.",
             },
             {
               title: "BRAND STORY TELLING",
-              subtitle: "Lorem ipsum dolor sit amet consectetur.",
-              desc: "Lorem ipsum dolor sit amet consectetur. Bo enim ac nunc dolor pellentesque.",
+              subtitle: "Stories That Build Trust",
+              desc: "We share your brand’s journey in a way that feels real and connects with your audience.",
             },
             {
               title: "ADD FILM & COMMERCIALIZE",
-              subtitle: "Lorem ipsum dolor sit amet consectetur.",
-              desc: "Lorem ipsum dolor sit amet consectetur. Bo enim ac nunc dolor pellentesque.",
+              subtitle: "Ads That Stick",
+              desc: "Catchy ad films that share your story in a way people notice and remember.",
             },
             {
               title: "WEB DEVELOPMENT",
-              subtitle: "Lorem ipsum dolor sit amet consectetur.",
-              desc: "Lorem ipsum dolor sit amet consectetur. Bo enim ac nunc dolor pellentesque.",
+              subtitle: "Websites People Love",
+              desc: "Easy-to-use, modern websites that make visitors stay longer and return often.",
             },
             {
               title: "MOBILE DEVELOPMENT",
-              subtitle: "Lorem ipsum dolor sit amet consectetur.",
-              desc: "Lorem ipsum dolor sit amet consectetur. Bo enim ac nunc dolor pellentesque.",
+              subtitle: "Make It Simple With an App",
+              desc: "Mobile apps designed to make your services quick, easy, and always accessible.",
+            },
+            {
+              title: "Search Engine Optimization (SEO)",
+              subtitle: "Show Up First!",
+              desc: "We make sure your brand appears when people search, bringing more traffic and more business.",
             },
           ].map((service, idx) => (
             <div key={service.title} className="mb-16">

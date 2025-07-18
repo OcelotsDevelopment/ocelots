@@ -7,7 +7,7 @@ function ContactSec() {
         {/* Form Box */}
         <div className="bg-[#fdfcf7] rounded-xl shadow-md p-8">
           <h3 className="text-2xl md:text-3xl font-semibold text-[#333] mb-6">
-            Let’s <span className="text-orange-500 font-bold">TALK</span>
+            Let’s Connect and Make People Talk About {" "} <span className="text-orange-500 font-bold">Your Brand!</span>
           </h3>
           <form className="space-y-4">
             <input
@@ -34,8 +34,7 @@ function ContactSec() {
         {/* Contact Info */}
         <div className="text-white flex flex-col gap-6">
           <p className="text-lg leading-relaxed">
-            Feel free to contact us any time. We will get back to you as soon as
-            possible.
+            We bring marketing and creativity together to help brands grow faster.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center text-sm font-medium">
             <div>

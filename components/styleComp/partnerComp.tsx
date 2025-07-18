@@ -94,7 +94,7 @@ export default function PartnerComp() {
                         borderRight: (i + 1) % 5 === 0 ? "none" : "1px solid #CDCBCB",
                         borderBottom: i >= (companyList.length) - 4 ? "none" : "1px solid #CDCBCB"
                     }} >
-                        <div className="bg-white rounded shadow-md p-4 h-20 w-40 flex justify-center items-center ">
+                        <div className="bg-white rounded shadow-md p-4 h-20 w-40 flex justify-center items-center overflow-hidden">
                             <img src={e.img} alt="EBG" className={"object-contain "+e.cls} />
                         </div>
                     </div>

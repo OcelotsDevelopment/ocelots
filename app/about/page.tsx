@@ -12,13 +12,11 @@ function page() {
             className="absolute z-10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 inset-0 w-full h-full object-cover"
           />
           <div className="absolute z-20 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 w-3/4 ">
-            <h1 className="md:text-6xl text-white font-semibold mb-9">
-              Driving Digital Innovation Since 2017
+            <h1 className="md:text-3xl text-white font-semibold mb-9">
+              Ocelots began in 2024 with a passion for helping brands grow in ways that feel fresh, creative, and meaningful. We believe digital marketing isn’t just about selling- it’s about creating experiences that make people notice, trust, and remember a brand.{" "}
             </h1>
-            <p className="md:text-3xl text-white font-semibold ">
-              Lorem ipsum dolor sit amet consectetur. Bibendum auctor
-              pellentesque commodo ornare felis arcu donec ut nullam. Eget id
-              vulputate pulvinar justo enim ac nunc dolor pellentesque.{" "}
+            <p className="md:text-3xl text-white  ">
+              We help brands stand out and connect with the right people. From social media campaigns and SEO to websites, ad films, and narrative, we develop tactics that provide genuine results. Every project revolves around the brand's own identity, blending strong concepts with significant execution.{" "}
             </p>
           </div>
         </div>
@@ -43,9 +41,7 @@ function page() {
           {/* Right: Heading and Text */}
           <div className="flex-1 max-w-xl">
             <p className="text-gray-600 text-lg leading-relaxed text-center md:text-left">
-              Lorem ipsum dolor sit amet consectetur. Bibendum auctor
-              pellentesque commodo ornare felis arcu donec ut nullam. Eget id
-              vulputate pulvinar justo enim ac nunc dolor pellentesque.
+              To be the most trusted growth partner for brands. We aim to build stories, campaigns, and digital experiences that don’t just market products but create genuine connections with people. At Ocelots, we believe great brands aren’t just built, they’re carefully crafted, and that’s what we’re here to do.
             </p>
           </div>
         </div>
@@ -64,20 +60,20 @@ function page() {
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-x-6 gap-y-10 justify-items-center">
               {[...Array(7)].map((_, i) => (
                 <div key={i} className="w-48 h-80 relative overflow-hidden flex flex-col items-center">
-                <div className="absolute top-0 left-0 w-full h-full rounded-tl-[68px] rounded-tr-none rounded-br-none rounded-bl-none overflow-hidden">
-                  <div className="w-full h-full bg-orange-500" />
+                  <div className="absolute top-0 left-0 w-full h-full rounded-tl-[68px] rounded-tr-none rounded-br-none rounded-bl-none overflow-hidden">
+                    <div className="w-full h-full bg-orange-500" />
+                  </div>
+                  <img
+                    src="/assets/team.png"
+                    alt="Team Member"
+                    className=" h-9/12 object-cover grayscale z-10 absolute -right-5 bottom-0"
+                    style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', borderTopLeftRadius: '48px' }}
+                  />
+                  <div className="absolute top-7 left-7 z-20 text-white text-sm font-light">
+                    <span className="block font-normal">Lorem ipsum</span>
+                    <span className="block font-semibold">creator</span>
+                  </div>
                 </div>
-                <img
-                  src="/assets/team.png"
-                  alt="Team Member"
-                  className=" h-9/12 object-cover grayscale z-10 absolute -right-5 bottom-0"
-                  style={{ clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', borderTopLeftRadius: '48px' }}
-                />
-                <div className="absolute top-7 left-7 z-20 text-white text-sm font-light">
-                  <span className="block font-normal">Lorem ipsum</span>
-                  <span className="block font-semibold">creator</span>
-                </div>
-              </div>
               ))}
             </div>
           </div>

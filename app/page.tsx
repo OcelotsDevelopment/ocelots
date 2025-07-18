@@ -9,13 +9,13 @@ export default function Home() {
       <section className="px-6 md:px-12 mt-5">
         <div className="flex flex-col md:flex-row items-center justify-between">
           <div>
-            <p className="text-2xl md:text-6xl">YOUR NEW DIGITAL</p>
+            <p className="text-2xl md:text-6xl">Your Growth Is</p>
             <div className="flex items-center gap-4">
               <button className="bg-primary rounded-4xl px-2.5 py-2 md:px-5 md:py-2.5 text-white ">
                 Get Started
               </button>
               <p className="text-2xl md:text-6xl">
-                SOLUTION <span className="text-primary">PARTNER</span>
+                OUR <span className="text-primary">JOB!</span>
               </p>
             </div>
           </div>
@@ -23,12 +23,15 @@ export default function Home() {
           <div className="flex items-start gap-3 md:gap-10 mt-8">
             <div className="h-32 w-[1px] bg-black"></div>
             <div>
+              {/* <p className="text-black/35 mb-2">
+                "At Ocelots, we transform digital visions into reality. <br />
+                We blend innovative creativity with strategic thinking to <br />
+                elevate brands through compelling content and cutting-edge solutions."
+              </p> */}
               <p className="text-black/35 mb-2">
-                Where creativity meets strategy, we help
-                <br />
-                brands shine through video, social media,
-                <br />
-                and design solutions."
+                We’re the people who make your brand <br />
+                look good, sound right, and reach <br />
+                the right audience.
               </p>
               <div className="flex items-center gap-4 text-center">
                 <div>
@@ -63,8 +66,8 @@ export default function Home() {
 
       <section className="py-20 px-2 md:px-12">
         <h2 className="text-center text-3xl sm:text-4xl md:text-5xl mb-8 md:mb-14">
-          We work the best{" "}
-          <span className="text-primary text-4xl sm:text-5xl md:text-7xl block sm:inline">Partners.</span>
+         Brands We’ve {" "}
+          <span className="text-primary text-4xl sm:text-5xl md:text-7xl block sm:inline">Powered.</span>
         </h2>
         <PartnerComp />
       </section>
@@ -94,9 +97,7 @@ export default function Home() {
                       Social Media Marketing
                     </p>
                     <p className="text-xs md:text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Suscipit animi, tenetur impedit aspernatur consectetur
-                      nisi repellendus corporis error quidem nulla.
+                      Grow your brand and engage your audience on social media platforms.
                     </p>
                   </div>
                 </div>
@@ -120,9 +121,7 @@ export default function Home() {
                       Search Engine Optimization(SEO)
                     </p>
                     <p className="text-xs md:text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Suscipit animi, tenetur impedit aspernatur consectetur
-                      nisi repellendus corporis error quidem nulla.
+                      Get found on Google and bring more customers to your website.
                     </p>
                   </div>
                 </div>
@@ -144,9 +143,7 @@ export default function Home() {
                   <div className="flip-card-back border border-orange-200 bg-[#f9f7f2] p-3 sm:p-4 text-left h-full overflow-y-hidden">
                     <p className="text-base sm:text-lg font-bold mb-2 sm:mb-4">Web Design</p>
                     <p className="text-xs md:text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Suscipit animi, tenetur impedit aspernatur consectetur
-                      nisi repellendus corporis error quidem nulla.
+                      Build clean, user-friendly websites that work smoothly on any device.
                     </p>
                   </div>
                 </div>
@@ -161,9 +158,7 @@ export default function Home() {
                   <div className="flip-card-back border border-orange-200 bg-[#f9f7f2] p-3 sm:p-4 text-left h-full overflow-y-hidden">
                     <p className="text-base sm:text-lg font-bold mb-2 sm:mb-4">Ad Film</p>
                     <p className="text-xs md:text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Suscipit animi, tenetur impedit aspernatur consectetur
-                      nisi repellendus corporis error quidem nulla.
+                      Create catchy ad films that make your brand stand out.
                     </p>
                   </div>
                 </div>
@@ -182,9 +177,7 @@ export default function Home() {
                       Mobile App Development
                     </p>
                     <p className="text-xs md:text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Suscipit animi, tenetur impedit aspernatur consectetur
-                      nisi repellendus corporis error quidem nulla.
+                      Design easy-to-use apps that keep your services just a tap away.
                     </p>
                   </div>
                 </div>
@@ -203,9 +196,7 @@ export default function Home() {
                       Brand Story Telling
                     </p>
                     <p className="text-xs md:text-base">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Suscipit animi, tenetur impedit aspernatur consectetur
-                      nisi repellendus corporis error quidem nulla.
+                      Share stories that make people connect with and trust your brand.
                     </p>
                   </div>
                 </div>
@@ -234,3 +225,5 @@ export default function Home() {
     </>
   );
 }
+
+
