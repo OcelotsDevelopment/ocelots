@@ -38,10 +38,11 @@
   margin-top: 1.8rem;
 }
 .embla__buttons {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.6rem;
+  display: flex;
+  /* grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem; */
   align-items: center;
+  justify-content: space-between;
 }
 .embla__button {
   -webkit-tap-highlight-color: rgba(var(--text-high-contrast-rgb-value), 0.5);

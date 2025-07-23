@@ -8,6 +8,11 @@ import {
   EmblaOptionsType,
 } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
+import {
+  NextButton,
+  PrevButton,
+  usePrevNextButtons,
+} from "./EmblaCarouselArrowButtons";
 // import {
 //   NextButton,
 //   PrevButton,
@@ -34,12 +39,12 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   // const { selectedIndex, scrollSnaps, onDotButtonClick } =
   //   useDotButton(emblaApi)
 
-  // const {
-  //   prevBtnDisabled,
-  //   nextBtnDisabled,
-  //   onPrevButtonClick,
-  //   onNextButtonClick
-  // } = usePrevNextButtons(emblaApi)
+  const {
+    prevBtnDisabled,
+    nextBtnDisabled,
+    onPrevButtonClick,
+    onNextButtonClick,
+  } = usePrevNextButtons(emblaApi);
 
   const setTweenNodes = useCallback((emblaApi: EmblaCarouselType): void => {
     tweenNodes.current = emblaApi.slideNodes().map((slideNode) => {
@@ -108,21 +113,27 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
   }, [emblaApi, tweenScale]);
 
   return (
-    <div className="embla">
-      <div className="embla__viewport" ref={emblaRef}>
-        <div className="embla__container">
-          {slides.map((index) => (
-            <div className="embla__slide" key={index}>
-              <div className="embla__slide__number overflow-hidden">
-                <img
-                  src={"carousl/" + (index + 1) + ".png"}
-                  alt=""
-                  className="w-auto h-auto rounded-2xl"
-                />
+    <div className="relative">
+      <div className="embla">
+        <div className="embla__viewport" ref={emblaRef}>
+          <div className="embla__container">
+            {slides.map((index) => (
+              <div className="embla__slide" key={index}>
+                <div className="embla__slide__number overflow-hidden">
+                  <img
+                    src={"carousl/" + (index + 1) + ".png"}
+                    alt=""
+                    className="w-auto h-auto rounded-2xl"
+                  />
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
+      </div>
+      <div className="embla__buttons absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full ">
+        <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+        <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
       </div>
     </div>
   );
@@ -137,4 +148,3 @@ function SwiperCard() {
 }
 
 export default SwiperCard;
-
